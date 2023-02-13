@@ -11,7 +11,7 @@ let jsonDocuments = [
 
 let canvas;
 let files = [];
-let displayText = "";
+let displayText = "Click to generate";
 
 //data structure
 let phrases = []; // for cut up generator
@@ -37,7 +37,7 @@ function draw() {
 
     let barLength = width*0.5;
     let length = map(loadbar,0,jsonDocuments.length,barLength/jsonDocuments.length,barLength);
-    rect(width*0.25,height*0.5,length,20);
+    rect(width*0.25,height*0.5,length*2,20);
 
   }else{
 
